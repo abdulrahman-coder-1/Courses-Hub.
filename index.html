@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Courses Hub: Launch Your Info-Product Business</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; /* Very light gray/off-white background */
+        }
+        /* Primary color for the brand - a strong, confident blue */
+        .brand-primary { color: #1f3d8a; }
+        .bg-brand-primary { background-color: #1f3d8a; }
+        /* Light background for the hero area */
+        .hero-bg-gradient {
+            background: linear-gradient(180deg, #ffffff 0%, #eef5ff 100%);
+        }
+
+        /* --- Social Proof Widget CSS --- */
+        #proof-widget-container {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: opacity 0.5s, visibility 0.5s, transform 0.5s;
+        }
+        #proof-widget-container.pp-visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-lg border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Updated Brand Name -->
+            <a href="#" class="text-3xl font-extrabold text-gray-900 flex items-center">
+                <span class="brand-primary mr-1">Courses</span>Hub
+            </a>
+            <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
+                <a href="#courses" class="hover:text-gray-900 transition duration-150">Catalog</a>
+                <a href="#reviews" class="hover:text-gray-900 transition duration-150">Reviews</a>
+                <a href="#" class="hover:text-gray-900 transition duration-150">Features</a>
+                <a href="#" class="hover:text-gray-900 transition duration-150">Pricing</a>
+            </nav>
+            <a href="#courses" class="px-6 py-2 bg-brand-primary text-white rounded-xl font-semibold hover:bg-blue-900 transition duration-200 shadow-xl">
+                Start Selling Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg-gradient py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="inline-block px-4 py-1 text-sm font-semibold bg-blue-100 text-blue-700 rounded-full mb-4 shadow-md uppercase tracking-wider">
+                Instant Revenue Generation
+            </p>
+            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight mb-6 max-w-5xl mx-auto">
+                The Hottest White-Label Courses Ready For <span class="brand-primary">Your Brand.</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-10 max-w-3xl mx-auto">
+                Get access to the four most profitable, high-demand digital marketing courses and start selling them under your name today.
+            </p>
+            <a href="#courses" class="bg-brand-primary text-white font-bold py-3 px-10 rounded-xl shadow-2xl hover:bg-blue-900 transition duration-300 transform hover:scale-105">
+                View the 4 Profitable Courses
+            </a>
+        </div>
+    </section>
+
+    <!-- Course Catalog Section (The 4 Courses) -->
+    <section id="courses" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-gray-900 text-center mb-16">
+                The 4 Pillars of Digital Wealth
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Course 1: Digital Product Launch Mastery -->
+                <div class="flex flex-col p-6 bg-white rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100">
+                    <div class="w-16 h-16 bg-red-100 flex items-center justify-center rounded-xl mb-4">
+                        <!-- ICON: Package / Digital Product -->
+                        <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Digital Product Launch Mastery</h3>
+                    <p class="text-gray-600 mb-6 flex-grow text-sm">
+                        From idea validation to launch day: the complete guide to creating and scaling high-ticket digital products.
+                    </p>
+                    <div class="mt-auto">
+                        <!-- PayPal Digital Product Launch Link -->
+                        <a href="https://www.paypal.com/ncp/payment/TWNQ2BRR5UH4C" target="_blank" class="block w-full text-center py-3 bg-brand-primary text-white font-semibold rounded-lg hover:bg-blue-900 transition duration-200">
+                            Get Access Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course 2: Affiliate Marketing Cashflow (Trending Up) -->
+                <div class="flex flex-col p-6 bg-white rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100">
+                    <div class="w-16 h-16 bg-yellow-100 flex items-center justify-center rounded-xl mb-4">
+                        <!-- ICON: Trending Up / Chart Line -->
+                        <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Affiliate Marketing Cashflow</h3>
+                    <p class="text-gray-600 mb-6 flex-grow text-sm">
+                        The definitive course on traffic generation, funnel building, and high-ticket affiliate program selection.
+                    </p>
+                    <div class="mt-auto">
+                        <!-- PayPal Affiliate Marketing Link -->
+                        <a href="https://www.paypal.com/ncp/payment/6GPQNDGS6582E" target="_blank" class="block w-full text-center py-3 bg-brand-primary text-white font-semibold rounded-lg hover:bg-blue-900 transition duration-200">
+                            Unlock Resale Rights
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course 3: Conversion Copywriting Secrets -->
+                <div class="flex flex-col p-6 bg-white rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100">
+                    <div class="w-16 h-16 bg-purple-100 flex items-center justify-center rounded-xl mb-4">
+                        <!-- ICON: Pencil / Edit / Writing -->
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.232z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Conversion Copywriting Secrets</h3>
+                    <p class="text-gray-600 mb-6 flex-grow text-sm">
+                        Learn to write sales pages, emails, and ads that compel action and drastically increase your conversion rates.
+                    </p>
+                    <div class="mt-auto">
+                        <!-- PayPal Copywriting Link -->
+                        <a href="https://www.paypal.com/ncp/payment/GUWADVG7Q4ZWN" target="_blank" class="block w-full text-center py-3 bg-brand-primary text-white font-semibold rounded-lg hover:bg-blue-900 transition duration-200">
+                            Get Access Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course 4: AI & Automated Dropshipping (Gear/Cog) -->
+                <div class="flex flex-col p-6 bg-white rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100">
+                    <div class="w-16 h-16 bg-green-100 flex items-center justify-center rounded-xl mb-4">
+                        <!-- ICON: Gear / Cog for Automation -->
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.345 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">AI & Automated Dropshipping</h3>
+                    <p class="text-gray-600 mb-6 flex-grow text-sm">
+                        Leverage AI tools to automate product research, ad creation, and customer service for a hands-off dropshipping business.
+                    </p>
+                    <div class="mt-auto">
+                        <!-- PayPal AI Dropshipping Link -->
+                        <a href="https://www.paypal.com/ncp/payment/HW6C7FBJZKRDQ" target="_blank" class="block w-full text-center py-3 bg-brand-primary text-white font-semibold rounded-lg hover:bg-blue-900 transition duration-200">
+                            Unlock Resale Rights
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-gray-50 border-t border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-gray-900 text-center mb-4">
+                What Our Successful Resellers Say
+            </h2>
+            <p class="text-xl text-gray-600 text-center mb-16 max-w-2xl mx-auto">
+                Join hundreds of entrepreneurs who have successfully launched their own information product businesses using our white-label courses.
+            </p>
+
+            <!-- Testimonial Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="flex flex-col p-6 bg-white rounded-xl shadow-lg border border-gray-100">
+                    <div class="flex mb-4 text-yellow-500">
+                        <!-- 5 Stars -->
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 7.02l6.572-.955L10 0l2.939 6.065 6.572.955-4.756 4.625 1.123 6.545z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 7.02l6.572-.955L10 0l2.939 6.065 6.572.955-4.756 4.625 1.123 6.545z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 7.02l6.572-.955L10 0l2.939 6.065 6.572.955-4.756 4.625 1.123 6.545z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 7.02l6.572-.955L10 0l2.939 6.065 6.572.955-4.756 4.625 1.123 6.545z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 7.02l6.572-.955L10 0l2.939 6.065 6.572.955-4.756 4.625 1.123 6.545z"/></svg>
+                    </div>
+                    <blockquote class="text-gray-700 italic flex-grow mb-4 text-base">
+                        "Finally, a straightforward guide to launching. The pricing modules alone paid for the **Digital Product Launch Mastery** course tenfold."
+                    </blockquote>
+                    <div class="pt-4 border-t border-gray-100">
+                        <p class="font-bold text-gray-900">Alex R.</p>
+                        <p class="text-sm text-brand-primary">E-Commerce Entrepreneur</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="flex flex-col p-6 bg-white rounded-xl shadow-lg border border-gray-100">
+                    <div class="flex mb-4 text-yellow-500">
+                        <!-- 5 Stars -->
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 7.02l6.572-.955L10 0l2.939 6.065 6.572.955-4.756 4.625 1.123 6.545z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 7.02l6.572-.955L10 0l2.939 6.065 6.572.955-4.756 4.625 1.123 6.545z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 7.02l6.572-.955L10 0l2.939 6.065 6.572.955-4.756 4.625 1.123 6.545z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 7.02l6.572-.955L10 0l2.939 6.065 6.572.955-4.756 4.625 1.123 6.545z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 7.02l6.572-.955L10 0l2.939 6.065 6.572.955-4.756 4.625 1.123 6.545z"/></svg>
+                    </div>
+                    <blockquote class="text-gray-700 italic flex-grow mb-4 text-base">
+                        "My email open rates jumped 40% after implementing the hook formulas from **Conversion Copywriting Secrets**. Highly recommend to anyone selling online."
+                    </blockquote>
+                    <div class="pt-4 border-t border-gray-100">
+                        <p class="font-bold text-gray-900">Sarah K.</p>
+                        <p class="text-sm text-brand-primary">Marketing Consultant</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="flex flex-col p-6 bg-white rounded-xl shadow-lg border border-gray-100">
+                    <div class="flex mb-4 text-yellow-500">
+                        <!-- 4.5 Stars (4 full, 1 half) -->
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 7.02l6.572-.955L10 0l2.939 6.065 6.572.955-4.756 4.625 1.123 6.545z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 7.02l6.572-.955L10 0l2.939 6.065 6.572.955-4.756 4.625 1.123 6.545z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 7.02l6.572-.955L10 0l2.939 6.065 6.572.955-4.756 4.625 1.123 6.545z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 7.02l6.572-.955L10 0l2.939 6.065 6.572.955-4.756 4.625 1.123 6.545z"/></svg>
+                        <svg class="w-5 h-5 fill-current text-gray-300" viewBox="0 0 20 20"><path d="M10 15L10 0 7.061 6.065 0.489 7.02 5.244 11.645 4.121 18.19z"/></svg>
+                    </div>
+                    <blockquote class="text-gray-700 italic flex-grow mb-4 text-base">
+                        "The automation scripts in the **AI & Automated Dropshipping** course are game-changers. I went from 10 hours of manual work a week to less than 2."
+                    </blockquote>
+                    <div class="pt-4 border-t border-gray-100">
+                        <p class="font-bold text-gray-900">Ben M.</p>
+                        <p class="text-sm text-brand-primary">Automated Niche Store Owner</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="flex flex-col p-6 bg-white rounded-xl shadow-lg border border-gray-100">
+                    <div class="flex mb-4 text-yellow-500">
+                        <!-- 5 Stars -->
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 7.02l6.572-.955L10 0l2.939 6.065 6.572.955-4.756 4.625 1.123 6.545z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 7.02l6.572-.955L10 0l2.939 6.065 6.572.955-4.756 4.625 1.123 6.545z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 7.02l6.572-.955L10 0l2.939 6.065 6.572.955-4.756 4.625 1.123 6.545z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 7.02l6.572-.955L10 0l2.939 6.065 6.572.955-4.756 4.625 1.123 6.545z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 7.02l6.572-.955L10 0l2.939 6.065 6.572.955-4.756 4.625 1.123 6.545z"/></svg>
+                    </div>
+                    <blockquote class="text-gray-700 italic flex-grow mb-4 text-base">
+                        "I was skeptical, but the niche research template from **Affiliate Marketing Cashflow** showed me exactly where the profit gaps were. Consistent cash flow within 30 days."
+                    </blockquote>
+                    <div class="pt-4 border-t border-gray-100">
+                        <p class="font-bold text-gray-900">Mia P.</p>
+                        <p class="text-sm text-brand-primary">Affiliate Blogger</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 mt-20">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-gray-500 text-xs">
+                &copy; 2025 Courses Hub. All rights reserved. | <a href="#" class="hover:text-white">Privacy</a> | <a href="#" class="hover:text-white">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Social Proof Widget HTML Container (Hidden by default) -->
+    <div id="proof-widget-container" class="w-72 bg-white rounded-lg shadow-2xl p-4 flex items-start space-x-3 border border-gray-200">
+        <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+        <div>
+            <!-- Updated Brand Name in Widget Text -->
+            <p class="text-sm font-semibold text-gray-900" id="proof-name-course"></p>
+            <p class="text-xs text-gray-500" id="proof-time"></p>
+        </div>
+    </div>
+
+    <!-- JavaScript for Social Proof Logic -->
+    <script>
+        // Data for the social proof widget to cycle through
+        const PROOF_DATA = [
+            { name: "Jessica T. from London", course: "AI & Automated Dropshipping", time: "just now" },
+            { name: "Marcus V. from New York", course: "Affiliate Marketing Cashflow", time: "2 minutes ago" },
+            { name: "Chloe S. from Sydney", course: "Conversion Copywriting Secrets", time: "5 minutes ago" },
+            { name: "John P. from Berlin", course: "Digital Product Launch Mastery", time: "8 minutes ago" },
+            { name: "Rajesh K. from Toronto", course: "AI & Automated Dropshipping", time: "11 minutes ago" },
+            { name: "Laura M. from Paris", course: "Conversion Copywriting Secrets", time: "14 minutes ago" },
+            { name: "David M. from Miami", course: "Affiliate Marketing Cashflow", time: "18 minutes ago" },
+        ];
+
+        class ProofWidget {
+            constructor(data, config) {
+                this.data = data;
+                this.cfg = Object.assign({
+                    showDurationMs: 5000,   // How long the notification is visible
+                    minGapMs: 12000,        // Minimum time between notifications
+                    maxGapMs: 25000,        // Maximum time between notifications
+                    loop: true,             // Keep cycling indefinitely
+                }, config);
+                this.container = document.getElementById('proof-widget-container');
+                this.nameCourseEl = document.getElementById('proof-name-course');
+                this.timeEl = document.getElementById('proof-time');
+                this.running = true;
+                this.idxLast = -1;
+            }
+
+            // Utility to get a random integer
+            randInt(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            // Schedule a function call after a delay
+            schedule(ms, fn) {
+                return setTimeout(fn, ms);
+            }
+
+            pickIndex() {
+                if (this.data.length === 0) return -1;
+                if (this.data.length === 1) return 0;
+                
+                let idx;
+                // Simple logic: pick a random index that isn't the last one shown
+                do {
+                    idx = this.randInt(0, this.data.length - 1);
+                } while (idx === this.idxLast);
+                
+                return idx;
+            }
+
+            updateContent(entry) {
+                // Use innerHTML to allow for bolding the name for emphasis
+                this.nameCourseEl.innerHTML = `<b>${entry.name}</b> just purchased <b>${entry.course}</b>`;
+                this.timeEl.textContent = `Purchased: ${entry.time}`;
+            }
+
+            show() { this.container.classList.add('pp-visible') }
+            hide() { this.container.classList.remove('pp-visible') }
+
+            cycleOnce() {
+                if (!this.running) return;
+
+                const idx = this.pickIndex();
+                if (idx === -1) return;
+                
+                this.idxLast = idx;
+                const entry = this.data[idx];
+                
+                this.updateContent(entry);
+                this.show();
+
+                this.schedule(this.cfg.showDurationMs, () => {
+                    this.hide();
+                    if (!this.cfg.loop) return;
+                    
+                    const gap = this.randInt(this.cfg.minGapMs, this.cfg.maxGapMs);
+                    this.schedule(gap, () => this.cycleOnce());
+                });
+            }
+
+            start() {
+                this.cycleOnce();
+            }
+        }
+
+        window.onload = function() {
+            // Wait 5 seconds before starting the social proof cycle
+            setTimeout(() => {
+                const widget = new ProofWidget(PROOF_DATA);
+                widget.start();
+            }, 5000); 
+        };
+    </script>
+</body>
+</html>
